@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5000566501175699541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8108354460968708112}
+  - component: {fileID: 8599578469423763633}
+  m_Layer: 0
+  m_Name: LevelBonusController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8108354460968708112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5000566501175699541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 424.0359, y: 619.87, z: 341.6054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1807996233023964868}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8599578469423763633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5000566501175699541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66373935285a964a96e8413ab5858c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 0
+  levelMap: {fileID: 0}
+  levelDefault: {fileID: 3807138270338477149}
+  lstTray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  boxLevelBonusController: {fileID: 0}
+  baseBox: {fileID: 0}
+  lstScrewOnTray: []
+  levelScaleHelper: {fileID: 0}
+  lstLevelNap: []
+  popupLevelBonus: {fileID: 0}
+  uILevelBonus: {fileID: 0}
+  completed: 0
+  numBox: 0
+  levelBonusHolder: {fileID: 0}
+  lstLevelBoxColor: 
+  isCheckingListTray: 0
+  tfmHolderHole: {fileID: 0}
+  isStartCountDownTime: 0
+  uIEffectDissolveAds: {fileID: 0}
+  gobjLevelLoad: {fileID: 0}
+  matHighlight: {fileID: 2100000, guid: 76a8576a15248d242b784ab9efd342d2, type: 2}
+  layerScrewHighlight:
+    serializedVersion: 2
+    m_Bits: 1024
+  layerSCrewNor:
+    serializedVersion: 2
+    m_Bits: 64
+  layerShapeHighlight:
+    serializedVersion: 2
+    m_Bits: 1024
+  layerShapeNor:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!1001 &5371119439808584777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8108354460968708112}
+    m_Modifications:
+    - target: {fileID: 2911084444698233420, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_Name
+      value: Level_Bonus_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911084444698233420, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.91105866
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35828936
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07233052
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9639356
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.048559442
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.06411131
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.25369266
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 7.247
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 5.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -29.127
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10b0720015a07f64e8e6d8b7a3d17908, type: 3}
+--- !u!4 &1807996233023964868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6025049198374623885, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+    type: 3}
+  m_PrefabInstance: {fileID: 5371119439808584777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3807138270338477149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9106173691110993940, guid: 10b0720015a07f64e8e6d8b7a3d17908,
+    type: 3}
+  m_PrefabInstance: {fileID: 5371119439808584777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a6cf88e435a0d4cb5a38682f308422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

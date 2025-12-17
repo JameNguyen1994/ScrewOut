@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e359746798ea59e4aa3580f4cf41d71b, type: 3}
+  m_Name: MainMenuBarDataSO
+  m_EditorClassIdentifier: 
+  selectedScale: 1.3
+  timeAnimation: 0.5
+  normalIconSize: {x: 130, y: 130}
+  selectedIconSize: {x: 180, y: 180}
+  defaultIndexItembar: 1
+  data:
+  - name: SHOP
+    levelUnlock: 0
+    spriteSelected: {fileID: 21300000, guid: dea1a5e8a0379034daf5382a9061b3c8, type: 3}
+    spriteNormal: {fileID: 21300000, guid: dea1a5e8a0379034daf5382a9061b3c8, type: 3}
+    spriteLock: {fileID: 21300000, guid: ad507235555bda5499af46ed599b6acf, type: 3}
+  - name: JOURNEY
+    levelUnlock: 4
+    spriteSelected: {fileID: 21300000, guid: df812c846f1715d4bb7cf64f1e51c0e0, type: 3}
+    spriteNormal: {fileID: 21300000, guid: df812c846f1715d4bb7cf64f1e51c0e0, type: 3}
+    spriteLock: {fileID: 21300000, guid: ad507235555bda5499af46ed599b6acf, type: 3}
+  - name: HOME
+    levelUnlock: 0
+    spriteSelected: {fileID: 21300000, guid: a031b8622a568d04ab0e8c5a95347260, type: 3}
+    spriteNormal: {fileID: 21300000, guid: a031b8622a568d04ab0e8c5a95347260, type: 3}
+    spriteLock: {fileID: 21300000, guid: ad507235555bda5499af46ed599b6acf, type: 3}
+  - name: RANK
+    levelUnlock: 25
+    spriteSelected: {fileID: 21300000, guid: d62f73b396c5c864c8608861d16854dc, type: 3}
+    spriteNormal: {fileID: 21300000, guid: d62f73b396c5c864c8608861d16854dc, type: 3}
+    spriteLock: {fileID: 21300000, guid: ca532a7d2da1d3e4b92d107e3b2a7a02, type: 3}
+  - name: TASK
+    levelUnlock: 20
+    spriteSelected: {fileID: 21300000, guid: 5608589a3dbe3cd4592e35d766e22cd9, type: 3}
+    spriteNormal: {fileID: 21300000, guid: 5608589a3dbe3cd4592e35d766e22cd9, type: 3}
+    spriteLock: {fileID: 21300000, guid: edd9be3cad36887499ecc48d18ebdfd2, type: 3}

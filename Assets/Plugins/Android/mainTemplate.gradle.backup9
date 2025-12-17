@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+apply from: '../shared/keepUnitySymbols.gradle'
+**APPLY_PLUGINS**
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['kotlin-stdlib.jar', 'kotlin-annotations.jar'])
+// Android Resolver Dependencies Start
+    implementation 'androidx.recyclerview:recyclerview:1.2.1' // Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml:9
+    implementation 'com.android.support:customtabs:28.+' // Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml:7
+    implementation 'com.android.support:recyclerview-v7:28.+' // Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml:6
+    implementation 'com.applovin.mediation:bidmachine-adapter:3.4.0.0' // Assets/MaxSdk/Mediation/BidMachine/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:bytedance-adapter:7.6.0.2.0' // Assets/MaxSdk/Mediation/ByteDance/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:chartboost-adapter:9.10.0.0' // Assets/MaxSdk/Mediation/Chartboost/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:facebook-adapter:[6.20.0.0]' // Assets/MaxSdk/Mediation/Facebook/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:fyber-adapter:8.4.0.0' // Assets/MaxSdk/Mediation/Fyber/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:google-adapter:[24.6.0.0]' // Assets/MaxSdk/Mediation/Google/Editor/Dependencies.xml:5
+    implementation 'com.applovin.mediation:google-ad-manager-adapter:[24.6.0.0]' // Assets/MaxSdk/Mediation/GoogleAdManager/Editor/Dependencies.xml:5
+    implementation 'com.applovin.mediation:inmobi-adapter:10.8.8.0' // Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:ironsource-adapter:9.0.0.0.0' // Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:maio-adapter:2.0.4.0' // Assets/MaxSdk/Mediation/Maio/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:mintegral-adapter:16.9.91.0' // Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:moloco-adapter:4.3.0.1' // Assets/MaxSdk/Mediation/Moloco/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:mytarget-adapter:5.27.3.0' // Assets/MaxSdk/Mediation/MyTarget/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:ogury-presage-adapter:6.1.0.1' // Assets/MaxSdk/Mediation/OguryPresage/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:pubmatic-adapter:4.9.1.0' // Assets/MaxSdk/Mediation/PubMatic/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:smaato-adapter:22.7.2.3' // Assets/MaxSdk/Mediation/Smaato/Editor/Dependencies.xml:8
+    implementation 'com.applovin.mediation:unityads-adapter:4.16.2.0' // Assets/MaxSdk/Mediation/UnityAds/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:verve-adapter:3.7.0.0' // Assets/MaxSdk/Mediation/Verve/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:vungle-adapter:7.6.0.0' // Assets/MaxSdk/Mediation/Vungle/Editor/Dependencies.xml:4
+    implementation 'com.applovin.mediation:yandex-adapter:7.16.0.0' // Assets/MaxSdk/Mediation/Yandex/Editor/Dependencies.xml:4
+    implementation 'com.applovin:applovin-sdk:13.3.1' // Assets/MaxSdk/AppLovin/Editor/Dependencies.xml:4
+    implementation 'com.github.BitBurst-GmbH.bitlabs-android-library:unity:3.2.24' // Assets/Plugins/Editor/BitLabsDependencies.xml:8
+    implementation 'com.google.android.gms:play-services-appset:16.0.2' // Assets/GameAnalytics/Editor/Android/Dependencies.xml:4
+    // implementation 'com.google.android.gms:play-services-base:16.1.0' // Assets/MaxSdk/Mediation/Chartboost/Editor/Dependencies.xml:9
+    implementation 'com.google.android.gms:play-services-base:18.7.2' // Assets/Firebase/Editor/AppDependencies.xml:17
+    implementation 'com.google.android.instantapps:instantapps:1.1.0' // Assets/GameAnalytics/Editor/Android/Dependencies.xml:3
+    implementation 'com.google.android.play:core-common:2.0.4' // Assets/GooglePlayPlugins/com.google.play.core/Editor/Dependencies.xml:3
+    implementation 'com.google.android.play:review:2.0.0' // Assets/GooglePlayPlugins/com.google.play.review/Editor/Dependencies.xml:3
+    implementation 'com.google.android.ump:user-messaging-platform:2.0.0' // Assets/MaxSdk/UMP/Editor/GoogleUmpDependencies.xml:7
+    implementation 'com.google.firebase:firebase-analytics:23.0.0' // Assets/Firebase/Editor/AppDependencies.xml:15
+    implementation 'com.google.firebase:firebase-analytics-unity:13.2.0' // Assets/Firebase/Editor/AnalyticsDependencies.xml:18
+    implementation 'com.google.firebase:firebase-app-unity:13.2.0' // Assets/Firebase/Editor/AppDependencies.xml:22
+    implementation 'com.google.firebase:firebase-common:22.0.0' // Assets/Firebase/Editor/AppDependencies.xml:13
+    implementation 'com.loopj.android:android-async-http:1.4.9' // Assets/RealTimeNet/Editor/RealTimeNetDependencies.xml:4
+    implementation 'com.onesignal:OneSignal:5.1.37' // Packages/com.onesignal.unity.android/Editor/OneSignalAndroidDependencies.xml:6
+    implementation 'com.squareup.picasso:picasso:2.71828' // Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml:5
+// Android Resolver Dependencies End
+**DEPS**}
+
+// Android Resolver Exclusions Start
+android {
+  packaging {
+      exclude ('/lib/armeabi/*' + '*')
+      exclude ('/lib/mips/*' + '*')
+      exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86/*' + '*')
+      exclude ('/lib/x86_64/*' + '*')
+  }
+}
+// Android Resolver Exclusions End
+android {
+    ndkPath "**NDKPATH**"
+
+    compileSdk **APIVERSION**
+    buildToolsVersion '**BUILDTOOLS**'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    defaultConfig {
+        minSdk **MINSDK**
+        targetSdk **TARGETSDK**
+        ndk {
+            debugSymbolLevel **DEBUGSYMBOLLEVEL**
+            abiFilters **ABIFILTERS**
+        }
+        versionCode **VERSIONCODE**
+        versionName '**VERSIONNAME**'
+        consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
+    }
+
+    lint {
+        abortOnError false
+    }
+
+    androidResources {
+        noCompress = **BUILTIN_NOCOMPRESS** + unityStreamingAssets.tokenize(', ')
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }**PACKAGING**
+}
+**IL_CPP_BUILD_SETUP**
+**SOURCE_BUILD_SETUP**
+**EXTERNAL_SOURCES**

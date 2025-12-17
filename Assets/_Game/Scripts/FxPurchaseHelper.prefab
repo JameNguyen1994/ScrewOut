@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7059259699517914740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4045798974443619615}
+  - component: {fileID: 957610310460399363}
+  m_Layer: 0
+  m_Name: FxPurchaseHelper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4045798974443619615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059259699517914740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957610310460399363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059259699517914740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d76e041b2dc69a47bf6fa53593228bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 0
+  navCtrl: {fileID: 0}
+  btnPlay: {fileID: 0}
+  beginTfm: {fileID: 0}
+  parentFx: {fileID: 0}
+  hammerFxPrefab: {fileID: 2655132682851864572, guid: 4b0822462ea27454683a6fc74e2ad5ee, type: 3}
+  swapFxPrefab: {fileID: 5984672735232310495, guid: 6e69bac1dddc2284995967fd6dbe2eaf, type: 3}
+  shuffleFxPrefab: {fileID: 3672865774091615930, guid: a6903f1c8291eba489c4cd7b082572fc, type: 3}
+  panelAvoidClick: {fileID: 0}
+  coinIcon: {fileID: 0}
+  hammerIcon: {fileID: 0}
+  switchIcon: {fileID: 0}
+  refreshIcon: {fileID: 0}
+  panelPurchaseFx: {fileID: 0}
+  boosterDuration: 0.5
